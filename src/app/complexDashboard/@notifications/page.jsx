@@ -1,8 +1,12 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Notification = () => {
   return (
-    <div>Notification</div>
+    <div className=' bg-blue-400'>
+        <div>Notification</div>
+        <Link href="/complexDashboard/archived">Archived</Link>
+    </div>
   )
 }
 
