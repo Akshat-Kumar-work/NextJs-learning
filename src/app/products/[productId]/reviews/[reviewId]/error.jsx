@@ -1,8 +1,12 @@
 'use client'
 
-const ErrorBoundary = ({error}) => {
+const ErrorBoundary = ({error ,reset}) => {
   return (
+    <>
     <div>{error.message}</div>
+    <button onClick={reset}>Try Again</button>
+    </>
+    
   )
 }
 
